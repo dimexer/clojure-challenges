@@ -9,6 +9,7 @@
       (is [1] (histogram [0]))
       (is [4 0 0 2] (histogram [0 0 0 0 3 3]))
       (is [0 1 1 1] (histogram [1 2 3]))
+      (is [0 1 1 1] (histogram [3 1 2]))
       (is (vec (repeat 1000001 1)) (histogram (range 0 1000001)))))
 
 (run-tests)
